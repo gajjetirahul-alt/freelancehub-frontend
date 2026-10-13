@@ -1,0 +1,33 @@
+.create-project-page {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.create-project-card {
+  padding: var(--sp-10);
+}
+
+.create-project-card h2 {
+  font-size: var(--font-2xl);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: var(--sp-2);
+}
+
+.create-project-card .subtitle {
+  color: var(--text-secondary);
+  font-size: var(--font-sm);
+  margin-bottom: var(--sp-8);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-5);
+}
+
+@media (max-width: 640px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

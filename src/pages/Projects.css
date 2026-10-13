@@ -1,0 +1,67 @@
+.projects-page .projects-toolbar {
+  display: flex;
+  gap: var(--sp-4);
+  margin-bottom: var(--sp-8);
+  flex-wrap: wrap;
+}
+
+.projects-page .search-box {
+  flex: 1;
+  min-width: 240px;
+  position: relative;
+}
+
+.projects-page .search-box input {
+  width: 100%;
+  padding-left: 42px;
+}
+
+.projects-page .search-box svg {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+}
+
+.projects-page .filter-select {
+  min-width: 160px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: var(--sp-6);
+}
+
+.projects-empty {
+  text-align: center;
+  padding: var(--sp-16);
+  color: var(--text-secondary);
+}
+
+.projects-empty h3 {
+  font-size: var(--font-xl);
+  color: var(--text-primary);
+  margin-bottom: var(--sp-2);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-3);
+  margin-top: var(--sp-10);
+}
+
+.pagination-info {
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+  margin: 0 var(--sp-4);
+}
+
+@media (max-width: 640px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

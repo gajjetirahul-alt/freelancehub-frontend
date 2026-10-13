@@ -1,0 +1,120 @@
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--sp-6);
+  margin-bottom: var(--sp-10);
+}
+
+.stat-card-dash {
+  padding: var(--sp-6);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-5);
+}
+
+.stat-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stat-icon-blue { background: rgba(59, 130, 246, 0.12); color: var(--accent-blue); }
+.stat-icon-emerald { background: rgba(16, 185, 129, 0.12); color: var(--accent-emerald); }
+.stat-icon-amber { background: rgba(245, 158, 11, 0.12); color: var(--accent-amber); }
+.stat-icon-purple { background: rgba(139, 92, 246, 0.12); color: var(--accent-purple); }
+
+.stat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-content .stat-num {
+  font-size: var(--font-2xl);
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.stat-content .stat-lbl {
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+  margin-top: var(--sp-1);
+}
+
+.dashboard-section {
+  margin-bottom: var(--sp-10);
+}
+
+.dashboard-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--sp-6);
+}
+
+.dashboard-section-header h2 {
+  font-size: var(--font-xl);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.dashboard-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.dashboard-list-item {
+  padding: var(--sp-5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  cursor: pointer;
+}
+
+.dashboard-list-item:hover {
+  transform: translateX(4px);
+}
+
+.dash-item-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.dash-item-title {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dash-item-meta {
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+  display: flex;
+  gap: var(--sp-4);
+}
+
+.dash-item-right {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  flex-shrink: 0;
+}
+
+.empty-state {
+  text-align: center;
+  padding: var(--sp-10);
+  color: var(--text-secondary);
+}
+
+.empty-state p {
+  margin-bottom: var(--sp-4);
+}
