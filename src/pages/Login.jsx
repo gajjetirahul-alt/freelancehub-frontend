@@ -78,6 +78,34 @@ export default function Login() {
           </button>
         </form>
 
+        <div style={{ marginTop: '1.25rem', paddingTop: '1.25rem', borderTop: '1px solid var(--border-color)', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+          <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', textAlign: 'center', marginBottom: '0.25rem' }}>
+            ⚡ Fast 1-Click Demo Access
+          </div>
+          <button
+            type="button"
+            className="btn btn-outline btn-sm"
+            style={{ width: '100%' }}
+            onClick={() => {
+              setEmail('demo@gmail.com');
+              setPassword('password');
+            }}
+          >
+            🚀 Fill Freelancer Demo
+          </button>
+          <button
+            type="button"
+            className="btn btn-outline btn-sm"
+            style={{ width: '100%' }}
+            onClick={() => {
+              setEmail('john@example.com');
+              setPassword('Password123!');
+            }}
+          >
+            💼 Fill Client Demo
+          </button>
+        </div>
+
         <div className="auth-footer">
           Don't have an account? <Link to="/register">Sign up</Link>
         </div>
